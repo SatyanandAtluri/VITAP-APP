@@ -1,6 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../LoginPage/onbording_page.dart';
 import 'background.dart';
 
 class Splash_Screen extends StatefulWidget {
@@ -11,6 +14,19 @@ class Splash_Screen extends StatefulWidget {
 }
 
 class _Splash_ScreenState extends State<Splash_Screen> {
+  @override
+  void initState() {
+    super.initState();
+
+    Timer(
+      Duration(seconds: 5),
+      () {
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => OnbordingPage()));
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +46,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
                   color: Color(0xff181A20),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

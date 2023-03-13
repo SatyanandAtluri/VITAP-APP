@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vitap_redesign/screens%20/Splash_Screen.dart';
+import 'package:vitap_redesign/pages/SplashPage/Splash_Screen.dart';
 
 void main() async {
   await ScreenUtil.ensureScreenSize();
