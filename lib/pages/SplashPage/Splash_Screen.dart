@@ -1,7 +1,10 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../LoginPage/onbording_page.dart';
 import 'background.dart';
@@ -32,21 +35,48 @@ class _Splash_ScreenState extends State<Splash_Screen> {
     return Scaffold(
       backgroundColor: Color(0xff181A20),
       body: Scaffold_Background(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Stack(
+          alignment: Alignment.center,
           children: [
             Center(
-              child: Container(
-                height: 50.h,
-                width: 150.w,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/images/VITAP.jpg"),
-                      fit: BoxFit.fill),
-                  color: Color(0xff181A20),
-                ),
+              child: SvgPicture.asset(
+                'assets/images/logo_splash.svg',
+                height: 40.h,
+                color: Colors.white,
               ),
             ),
+            Positioned(
+              bottom: 20.h,
+              child: Column(
+                children: [
+                  CupertinoActivityIndicator(
+                    color: Colors.white70,
+                  ),
+                  SizedBox(height: 10.h),
+                  Row(
+                    children: [
+                      Text(
+                        'Developed and Maintained by',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.inter(
+                          fontSize: 10.sp,
+                          color: Color(0xff5E6272),
+                        ),
+                      ),
+                      Text(
+                        ' TEAM NExT',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'brolink',
+                          fontSize: 10.sp,
+                          color: Color(0xff5E6272),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

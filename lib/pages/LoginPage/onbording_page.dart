@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vitap_redesign/Customs/custom_tap.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 class OnbordingPage extends StatelessWidget {
@@ -15,42 +16,42 @@ class OnbordingPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              height: 300.h,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/images/graphic.png"),
-                      fit: BoxFit.fill)),
+            Image.asset(
+              'assets/images/graphic.png',
+              height: 350.h,
+              fit: BoxFit.fill,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 50.h, right: 10.h),
-              child: Text(
-                'Manage',
-                style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 35.sp,
-                    color: Color(0xffffffff)),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 50.h, right: 10.h),
-              child: Text(
-                'Everything',
-                style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 35.sp,
-                    color: Color(0xffffffff)),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 50.h, right: 10.h),
-              child: Text(
-                'on Phone',
-                style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 35.sp,
-                    color: Color(0xffffffff)),
+              padding: EdgeInsets.only(left: 30.h, right: 10.h),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Manage',
+                    textAlign: TextAlign.start,
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 35.sp,
+                        color: Color(0xffffffff)),
+                  ),
+                  Text(
+                    'Everything',
+                    textAlign: TextAlign.start,
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 35.sp,
+                        color: Color(0xffffffff)),
+                  ),
+                  Text(
+                    'on Phone',
+                    textAlign: TextAlign.start,
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 35.sp,
+                        color: Color(0xffffffff)),
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 20.h),
@@ -79,58 +80,44 @@ class OnbordingPage extends StatelessWidget {
             SizedBox(
               height: 30.h,
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 30.h, right: 30.h),
-              child: InkWell(
-                onTap: () {},
-                child: Container(
-                  height: 50.h,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: Color(0xff246BFD),
-                      borderRadius: BorderRadius.circular(25.r),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: Offset(6, 5),
-                          spreadRadius: -5,
-                          blurRadius: 29,
-                          color: Color.fromRGBO(0, 0, 0, 1),
-                        )
-                      ]),
-                  child: Center(
-                    child: Text('Continue with VTOP',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.inter(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16.sp,
-                          color: Color(0xffffffff),
-                        )),
+            CustomTap(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Material(
+                    borderRadius: BorderRadius.circular(25.r),
+                    elevation: 20,
+                    child: Container(
+                      height: 50.h,
+                      width: 290.h,
+                      decoration: BoxDecoration(
+                        color: Color(0xff246BFD),
+                        borderRadius: BorderRadius.circular(25.r),
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     offset: Offset(6, 5),
+                        //     spreadRadius: -5,
+                        //     blurRadius: 29,
+                        //     color: Color.fromRGBO(0, 0, 0, 1),
+                        //   )
+                        // ]
+                      ),
+                      child: Center(
+                        child: Text('Continue with VTOP',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16.sp,
+                              color: Color(0xffffffff),
+                            )),
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
             ),
             SizedBox(
               height: 20.h,
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 30.h, right: 30.h),
-              child: Container(
-                height: 50.h,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    color: Color(0xff181A20),
-                    borderRadius: BorderRadius.circular(25.r),
-                    border: Border.all(color: Color(0xff494C54))),
-                child: Center(
-                  child: Text('Link your Account',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.inter(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16.sp,
-                        color: Color(0xffffffff),
-                      )),
-                ),
-              ),
             ),
             SizedBox(height: 20.h),
             Center(
@@ -138,7 +125,7 @@ class OnbordingPage extends StatelessWidget {
                 'By continuing you agree Terms of',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(
-                  fontSize: 14.sp,
+                  fontSize: 12.sp,
                   color: Color(0xff5E6272),
                 ),
               ),
@@ -148,7 +135,7 @@ class OnbordingPage extends StatelessWidget {
                 'Services & Privacy Policy',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(
-                  fontSize: 14.sp,
+                  fontSize: 12.sp,
                   color: Color(0xff5E6272),
                 ),
               ),
