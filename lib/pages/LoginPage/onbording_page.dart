@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vitap_redesign/Customs/custom_tap.dart';
+import 'package:vitap_redesign/pages/LoginPage/login_page.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 class OnbordingPage extends StatelessWidget {
@@ -81,6 +82,10 @@ class OnbordingPage extends StatelessWidget {
               height: 30.h,
             ),
             CustomTap(
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => LoginPage()));
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
