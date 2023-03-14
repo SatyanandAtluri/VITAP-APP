@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -84,8 +85,8 @@ class OnbordingPage extends StatelessWidget {
             ),
             CustomTap(
               onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => LoginPage()));
+                Navigator.of(context).push(
+                    CupertinoPageRoute(builder: (context) => LoginPage()));
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
