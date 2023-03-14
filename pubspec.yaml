@@ -38,6 +38,7 @@ dependencies:
   flutter_screenutil: ^5.7.0
   google_fonts: ^4.0.3
   flutter_svg: ^2.0.3
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:

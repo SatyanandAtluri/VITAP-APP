@@ -11,6 +11,7 @@ class OnbordingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       backgroundColor: Color(0xff181A20),
       body: Scaffold_Background(
         child: Column(
