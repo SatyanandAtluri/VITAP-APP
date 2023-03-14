@@ -66,6 +66,8 @@ class HomePage extends StatelessWidget {
                       Color(0xffBE9EFF),
                       Color(0xffFFB8E0),
                     ],
+                    end: Alignment.bottomRight,
+                    begin: Alignment.topLeft,
                   )),
                 )
               ],
