@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:vitap_redesign/Customs/custom_tap.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
+import '../Attendencepage/attendence_page.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -194,7 +196,10 @@ class HomePage extends StatelessWidget {
                       height: 10.h,
                     ),
                     CustomTap(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => AttendencePage()));
+                      },
                       child: Container(
                         height: 70.h,
                         width: double.infinity,
