@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vitap_redesign/Customs/custom_tap.dart';
+import 'package:vitap_redesign/pages/Profilepage/profile_page.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 import '../Attendencepage/attendence_page.dart';
@@ -45,13 +46,19 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           width: 20.w,
                         ),
-                        CircleAvatar(
-                          backgroundColor: Color(0xff88C0FC),
-                          radius: 20.r,
-                          child: Text(
-                            'S',
-                            style: GoogleFonts.poppins(
-                                color: Color(0xffffffff), fontSize: 18.sp),
+                        CustomTap(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => ProfilePage()));
+                          },
+                          child: CircleAvatar(
+                            backgroundColor: Color(0xff88C0FC),
+                            radius: 20.r,
+                            child: Text(
+                              'S',
+                              style: GoogleFonts.poppins(
+                                  color: Color(0xffffffff), fontSize: 18.sp),
+                            ),
                           ),
                         )
                       ],
