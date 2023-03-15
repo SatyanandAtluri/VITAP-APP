@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vitap_redesign/Customs/custom_tap.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 class HomePage extends StatelessWidget {
@@ -38,9 +39,12 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                               color: Color(0xffffffff),
                             )),
+                        SizedBox(
+                          width: 20.w,
+                        ),
                         CircleAvatar(
                           backgroundColor: Color(0xff88C0FC),
-                          radius: 25.r,
+                          radius: 20.r,
                           child: Text(
                             'S',
                             style: GoogleFonts.poppins(
@@ -185,6 +189,115 @@ class HomePage extends StatelessWidget {
                           fontSize: 10.sp,
                           color: Color(0xa0ffffff),
                           fontWeight: FontWeight.w300),
+                    ),
+                    SizedBox(
+                      height: 10.h,
+                    ),
+                    CustomTap(
+                      onTap: () {},
+                      child: Container(
+                        height: 70.h,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Color(0xff262A34),
+                          borderRadius: BorderRadius.circular(20.r),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 10.h, right: 10.h),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                'assets/images/pencil.png',
+                                height: 50.h,
+                                fit: BoxFit.fill,
+                              ),
+                              Text(
+                                'Attendence',
+                                style: GoogleFonts.inter(
+                                    fontSize: 16.sp,
+                                    color: Color(0xffffffff),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              Icon(Icons.arrow_forward_ios,
+                                  size: 25.sp, color: Color(0xffffffff)),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.h,
+                    ),
+                    CustomTap(
+                      onTap: () {},
+                      child: Container(
+                        height: 70.h,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: Color(0xff262A34),
+                            borderRadius: BorderRadius.circular(20.r)),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 10.h, right: 10.h),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                'assets/images/pencil.png',
+                                height: 50.h,
+                                fit: BoxFit.fill,
+                              ),
+                              Text(
+                                'Academic Calender',
+                                style: GoogleFonts.inter(
+                                    fontSize: 16.sp,
+                                    color: Color(0xffffffff),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              Icon(Icons.arrow_forward_ios,
+                                  size: 25.sp, color: Color(0xffffffff)),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.h,
+                    ),
+                    CustomTap(
+                      onTap: () {},
+                      child: Container(
+                        height: 70.h,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: Color(0xff262A34),
+                            borderRadius: BorderRadius.circular(20.r)),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 10.h, right: 10.h),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                'assets/images/pencil.png',
+                                height: 50.h,
+                                fit: BoxFit.fill,
+                              ),
+                              Text(
+                                'Exam Schedule',
+                                style: GoogleFonts.inter(
+                                    fontSize: 16.sp,
+                                    color: Color(0xffffffff),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              Icon(Icons.arrow_forward_ios,
+                                  size: 25.sp, color: Color(0xffffffff)),
+                            ],
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),

@@ -39,6 +39,7 @@ dependencies:
   google_fonts: ^4.0.3
   flutter_svg: ^2.0.3
   iconsax: ^0.0.8
+  auto_route: ^5.0.4
 
 dev_dependencies:
   flutter_test:
