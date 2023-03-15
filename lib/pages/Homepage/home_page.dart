@@ -5,6 +5,7 @@ import 'package:vitap_redesign/Customs/custom_tap.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 import '../Attendencepage/attendence_page.dart';
+import '../ExamSchedulePage/exam_schedule.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -272,7 +273,10 @@ class HomePage extends StatelessWidget {
                       height: 10.h,
                     ),
                     CustomTap(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ExamSchedulePage()));
+                      },
                       child: Container(
                         height: 70.h,
                         width: double.infinity,
