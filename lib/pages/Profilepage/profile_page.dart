@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vitap_redesign/Customs/custom_tap.dart';
+import 'package:vitap_redesign/pages/Profilepage/profile_view.dart';
 import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -72,7 +73,10 @@ class ProfilePage extends StatelessWidget {
                 ),
                 Center(
                   child: CustomTap(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => ProfileView()));
+                    },
                     child: Container(
                       height: 40.h,
                       width: 120.w,
