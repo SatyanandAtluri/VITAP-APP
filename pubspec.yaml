@@ -41,6 +41,7 @@ dependencies:
   iconsax: ^0.0.8
   auto_route: ^5.0.4
   percent_indicator: ^4.2.3
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:
