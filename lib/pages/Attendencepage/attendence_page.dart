@@ -19,7 +19,7 @@ class _AttendencePageState extends State<AttendencePage> {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Color(0xff181A20),
+        backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Color(0xffffffff)),
           onPressed: () => Navigator.of(context).pop(),
@@ -33,7 +33,7 @@ class _AttendencePageState extends State<AttendencePage> {
           ),
         ),
       ),
-      body: Scaffold_Background(
+      body: ScaffoldBackground(
         child: Column(
           children: [
             Padding(

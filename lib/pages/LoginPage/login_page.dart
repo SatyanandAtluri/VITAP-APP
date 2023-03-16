@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
               backgroundColor: Colors.transparent,
             ),
             SliverToBoxAdapter(
-              child: Scaffold_Background(
+              child: ScaffoldBackground(
                 child: Padding(
                   padding: EdgeInsets.all(25.h),
                   child: Column(

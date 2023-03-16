@@ -14,7 +14,7 @@ class ExamSchedulePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Color(0xff181A20),
+        backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Color(0xffffffff)),
           onPressed: () => Navigator.of(context).pop(),
@@ -28,7 +28,7 @@ class ExamSchedulePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Scaffold_Background(
+      body: ScaffoldBackground(
         child: Padding(
           padding: EdgeInsets.all(10.h),
           child: Column(

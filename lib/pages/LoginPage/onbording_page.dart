@@ -14,7 +14,7 @@ class OnbordingPage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Color(0xff181A20),
-      body: Scaffold_Background(
+      body: ScaffoldBackground(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

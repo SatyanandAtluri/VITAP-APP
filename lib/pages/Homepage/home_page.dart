@@ -7,6 +7,7 @@ import 'package:vitap_redesign/pages/SplashPage/background.dart';
 
 import '../Attendencepage/attendence_page.dart';
 import '../ExamSchedulePage/exam_schedule.dart';
+import '../Facultypage/faculty_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -27,7 +28,7 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.transparent,
           ),
           SliverToBoxAdapter(
-            child: Scaffold_Background(
+            child: ScaffoldBackground(
               child: Padding(
                 padding: EdgeInsets.all(20.h),
                 child: Column(
@@ -303,6 +304,46 @@ class HomePage extends StatelessWidget {
                               ),
                               Text(
                                 'Exam Schedule',
+                                style: GoogleFonts.inter(
+                                    fontSize: 16.sp,
+                                    color: Color(0xffffffff),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              Icon(Icons.arrow_forward_ios,
+                                  size: 25.sp, color: Color(0xffffffff)),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.h,
+                    ),
+                    CustomTap(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => FacultyPage()));
+                      },
+                      child: Container(
+                        height: 70.h,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Color(0xff262A34),
+                          borderRadius: BorderRadius.circular(20.r),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 10.h, right: 10.h),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                'assets/images/pencil.png',
+                                height: 50.h,
+                                fit: BoxFit.fill,
+                              ),
+                              Text(
+                                'Faculty Details',
                                 style: GoogleFonts.inter(
                                     fontSize: 16.sp,
                                     color: Color(0xffffffff),

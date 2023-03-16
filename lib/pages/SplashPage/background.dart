@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Scaffold_Background extends StatelessWidget {
+class ScaffoldBackground extends StatelessWidget {
   final Widget child;
 
-  const Scaffold_Background({super.key, required this.child});
+  const ScaffoldBackground({super.key, required this.child});
   @override
   Widget build(BuildContext context) {
     return CustomPaint(

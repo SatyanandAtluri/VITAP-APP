@@ -22,7 +22,7 @@ class ProfilePage extends StatelessWidget {
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      body: Scaffold_Background(
+      body: ScaffoldBackground(
         child: Padding(
           padding: EdgeInsets.all(10.h),
           child: Column(
