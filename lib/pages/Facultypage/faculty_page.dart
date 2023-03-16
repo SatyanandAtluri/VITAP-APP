@@ -143,7 +143,10 @@ class FacultyPage extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        icon: Icon(Icons.close))
+                        icon: Icon(
+                          Icons.close,
+                          color: Color(0xffffffff),
+                        ))
                   ],
                 ),
                 Center(
