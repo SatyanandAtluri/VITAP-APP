@@ -140,13 +140,14 @@ class FacultyPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     IconButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                        icon: Icon(
-                          Icons.close,
-                          color: Color(0xffffffff),
-                        ))
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: Icon(
+                        Icons.close,
+                        color: Color(0xffffffff),
+                      ),
+                    ),
                   ],
                 ),
                 Center(
